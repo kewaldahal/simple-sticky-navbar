@@ -33,12 +33,12 @@ body {
     color: #fff;
   }
   
-  /* Add hover animation for navbar links */
+
   .navbar a:hover {
-    color: #000; /* Black color on hover */
+    color: #000;
   }
   
-  /* Hide the icon and show the text when not hovering */
+
   .navbar a i {
     display: none;
   }
@@ -48,33 +48,32 @@ body {
   }
   
   .navbar a::before {
-    content: ""; /* This is an empty pseudo-element used to create the underline effect */
+    content: ""; 
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #ff0000; /* Red color */
-    transform: scaleX(0); /* Initially, the fill is 0% */
+    background-color: #ff0000; 
+    transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.2s ease-in; /* Adjust the speed here (0.2s in this example) */
+    transition: transform 0.2s ease-in;
   }
   
   .navbar a:hover::before {
-    transform: scaleX(1); /* On hover, the fill is 100% (entire width) */
+    transform: scaleX(1);
   }
   
-  /* Font Awesome Icons */
+  
   .navbar a[data-icon]::before {
     content: attr(data-icon);
   }
   
-  /* Icon Styles */
+ 
   .navbar a[data-icon] i {
-    font-size: 16px; /* Adjust icon size as needed */
+    font-size: 16px;
   }
   
-  /* Avatar Styles */
   .avatar {
     width: 30px;
     height: 30px;
@@ -83,7 +82,7 @@ body {
     overflow: hidden;
   }
 
-  /* Home Section Styles */
+ 
 .home-section {
     height: 100vh; /* Adjust the height of the home section as needed */
     background-image: url("home_bg.jpg"); /* Replace "home_bg.jpg" with the path to your background image */

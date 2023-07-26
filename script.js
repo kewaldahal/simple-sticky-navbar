@@ -13,3 +13,13 @@ navbarLinks.forEach(link => {
     });
   });
 });
+//typing animation ko code 
+//copy garnu pare credit diyera garda hunxa 
+document.addEventListener('DOMContentLoaded', function() {
+  const typed = new Typed('.typed-text', {
+    strings: ["LEARNER", "FUTURE DEVELOPER", "TECHNERD", "LAZY"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+  });
+});
